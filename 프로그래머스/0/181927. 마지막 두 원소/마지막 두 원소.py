@@ -7,4 +7,4 @@ def solution(num_list):
     answer = num_list
     return answer   
 
-# 예외가 존재함
+# 크지 않다 -> 작거나 같다
