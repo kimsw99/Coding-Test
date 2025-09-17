@@ -1,11 +1,11 @@
 from collections import deque
 
-def move_point(n, k):
+def move_point(n, k, cnt):
 
     MAX = 100001
     visited = [False]*MAX
     queue = deque()
-    queue.append((n, 0))
+    queue.append((n, cnt))
     visited[n] = True
 
     while queue:
@@ -25,5 +25,7 @@ def move_point(n, k):
 
 n, k= map(int, input().split())
 
+cnt = 0
+
 # BFS를 수행한 결과 출력
-print(move_point(n, k))
+print(move_point(n, k,cnt))
